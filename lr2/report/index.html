@@ -1,0 +1,1495 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../../lr1/report/">
+      
+      
+        <link rel="next" href="../practice/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Отчёт - Веб-программирование. Мурашов Никита. K3341</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#2-django" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href="../.." title="Веб-программирование. Мурашов Никита. K3341" class="md-header__button md-logo" aria-label="Веб-программирование. Мурашов Никита. K3341" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Веб-программирование. Мурашов Никита. K3341
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Отчёт
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Веб-программирование. Мурашов Никита. K3341" class="md-nav__button md-logo" aria-label="Веб-программирование. Мурашов Никита. K3341" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Веб-программирование. Мурашов Никита. K3341
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Главная
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ЛР1
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ЛР1
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lr1/report/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Отчёт
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ЛР2
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ЛР2
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Отчёт
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Отчёт
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Цель работы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Вариант
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Средства разработки
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Как устроен запрос
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Запуск
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Модель данных
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Интерфейсы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Соответствие заданию
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Структура кода
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Поиск, фильтры, сортировка, пагинация
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Защита
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jinja2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jinja2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ключевые представления
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jinja2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ключевые шаблоны (Jinja2)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Скриншоты
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Тесты
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Вывод
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Источники
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../practice/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Практики 2.1–2.3
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Цель работы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Вариант
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Средства разработки
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Как устроен запрос
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Запуск
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Модель данных
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Интерфейсы
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Соответствие заданию
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Структура кода
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Поиск, фильтры, сортировка, пагинация
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Защита
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jinja2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Jinja2
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ключевые представления
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jinja2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ключевые шаблоны (Jinja2)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Скриншоты
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Тесты
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Вывод
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Источники
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="2-django">ЛР2. Отчёт — Сайт на Django</h1>
+<h2 id="_1">Цель работы</h2>
+<p>Освоить разработку веб-сервиса на Django: описать модель данных, реализовать клиентские интерфейсы и логику сайта по паттерну MVC (в Django — MVT) с шаблонизацией Jinja2 и СУБД PostgreSQL.</p>
+<h2 id="_2">Вариант</h2>
+<p>Порядковый номер 17. Вариант: <code>((17-1) % 6) + 1 = 5</code> — <strong>список научных конференций</strong>.</p>
+<h2 id="_3">Средства разработки</h2>
+<p>Python 3.10+, Django 5.2 LTS, Jinja2, PostgreSQL 16 (в Docker), <code>psycopg</code>, <code>python-dotenv</code>, Bootstrap 5 (CDN).</p>
+<ul>
+<li><strong>PostgreSQL</strong>, а не SQLite — так требует задание. Ограничения (<code>UniqueConstraint</code>) и сортировка с <code>NULLS LAST</code> проверяются на той же СУБД, что и в рабочей среде.</li>
+<li><strong>Jinja2</strong> — по заданию. Django-admin остаётся на родных <code>DjangoTemplates</code>, поэтому в проекте два движка шаблонов.</li>
+<li><strong>Django 5.2 LTS вместо 3.x из задания.</strong> «Python 3.6+, Django 3» задаёт нижнюю границу, а ветка 3.2 снята с поддержки в апреле 2024 и не получает исправлений безопасности. Код не использует ничего, что появилось позже Django 3. Весь набор тестов проходит и на Django 3.2.25 / Python 3.10 (проверено в Docker; для 3.2 вместо <code>psycopg</code> нужен <code>psycopg2-binary</code>, потому что <code>psycopg</code> 3 Django поддерживает с версии 4.2).</li>
+<li><strong>Bootstrap</strong> даёт готовые компоненты (меню, формы, таблицы, пагинацию) без собственной вёрстки: стилизация нужна для максимального балла.</li>
+</ul>
+<h2 id="_4">Как устроен запрос</h2>
+<pre class="mermaid"><code>flowchart LR
+    B[Браузер] --&gt; U[urls.py]
+    U --&gt; V[views.py]
+    V --&gt; M[models.py / ORM]
+    M &lt;--&gt; DB[(PostgreSQL)]
+    V --&gt; T[Jinja2-шаблон]
+    T --&gt; B</code></pre>
+<p><code>urls.py</code> по адресу выбирает представление. Представление через ORM читает или пишет данные в PostgreSQL и передаёт их в шаблон, а шаблон возвращает HTML.</p>
+<h2 id="_5">Запуск</h2>
+<div class="highlight"><pre><span></span><code>cp<span class="w"> </span>.env.example<span class="w"> </span>.env<span class="w">                 </span><span class="c1"># заполните DJANGO_SECRET_KEY и DB_PASSWORD</span>
+docker<span class="w"> </span>compose<span class="w"> </span>up<span class="w"> </span>-d<span class="w">                 </span><span class="c1"># PostgreSQL, параметры из .env</span>
+python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nb">source</span><span class="w"> </span>.venv/bin/activate
+pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+python<span class="w"> </span>manage.py<span class="w"> </span>migrate
+python<span class="w"> </span>manage.py<span class="w"> </span>seed<span class="w">                </span><span class="c1"># демо-данные; пароли берёт из .env или генерирует и печатает</span>
+python<span class="w"> </span>manage.py<span class="w"> </span>runserver
+python<span class="w"> </span>manage.py<span class="w"> </span><span class="nb">test</span><span class="w">                </span><span class="c1"># 64 теста</span>
+</code></pre></div>
+<p>Секреты (<code>DJANGO_SECRET_KEY</code>, пароль БД, пароли демо-пользователей) лежат в <code>.env</code>, а сам <code>.env</code> — в <code>.gitignore</code>. В репозитории только образец <code>.env.example</code>, поэтому пароли не попадают в историю git. Если <code>.env</code> нет, Django сразу сообщает, какой переменной не хватает (<code>ImproperlyConfigured</code>). Пароли в тестах генерируются случайно при каждом запуске.</p>
+<h2 id="_6">Модель данных</h2>
+<ul>
+<li><code>User(AbstractUser)</code> + <code>organization</code>, <code>academic_degree</code> (<code>AUTH_USER_MODEL</code>, как в практике 2.3). Свою модель пользователя задают до первой миграции: в готовой схеме БД её заменить очень трудно.</li>
+<li><code>Topic</code> — тематика с уникальным названием.</li>
+<li><code>Conference</code> — название, тематики (<code>topics</code>, «многие ко многим»), место (<code>venue_name</code>, <code>city</code>), даты начала и окончания, описания конференции и места, условия участия.</li>
+<li><code>Participation</code> — регистрация автора: конференция, пользователь, название и тезисы доклада, результат (<code>pending</code> / <code>recommended</code> / <code>not_recommended</code>). Одна регистрация на автора и конференцию.</li>
+<li><code>Review</code> — отзыв: конференция, автор, период участия, текст, рейтинг 1–10.</li>
+</ul>
+<pre class="mermaid"><code>erDiagram
+    User ||--o{ Participation : "регистрируется"
+    User ||--o{ Review : "пишет"
+    Conference ||--o{ Participation : "принимает"
+    Conference ||--o{ Review : "получает"
+    Conference }o--o{ Topic : "тематики"
+    User {
+        string username
+        string organization
+        string academic_degree
+    }
+    Conference {
+        string title
+        string city
+        string venue_name
+        date start_date
+        date end_date
+        text participation_terms
+    }
+    Participation {
+        string talk_title
+        text abstract
+        string result
+    }
+    Review {
+        date start_date
+        date end_date
+        text text
+        int rating
+    }
+    Topic {
+        string name
+    }</code></pre>
+<p>Ключевые ограничения:</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Participation</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="k">class</span><span class="w"> </span><span class="nc">Result</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">TextChoices</span><span class="p">):</span>
+        <span class="n">PENDING</span> <span class="o">=</span> <span class="s2">"pending"</span><span class="p">,</span> <span class="s2">"Не рассмотрено"</span>
+        <span class="n">RECOMMENDED</span> <span class="o">=</span> <span class="s2">"recommended"</span><span class="p">,</span> <span class="s2">"Рекомендован к публикации"</span>
+        <span class="n">NOT_RECOMMENDED</span> <span class="o">=</span> <span class="s2">"not_recommended"</span><span class="p">,</span> <span class="s2">"Не рекомендован к публикации"</span>
+    <span class="o">...</span>
+    <span class="k">class</span><span class="w"> </span><span class="nc">Meta</span><span class="p">:</span>
+        <span class="n">constraints</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="n">models</span><span class="o">.</span><span class="n">UniqueConstraint</span><span class="p">(</span><span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="s2">"conference"</span><span class="p">,</span> <span class="s2">"user"</span><span class="p">],</span> <span class="n">name</span><span class="o">=</span><span class="s2">"unique_participation_per_user"</span><span class="p">)</span>
+        <span class="p">]</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">Review</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="o">...</span>
+    <span class="n">rating</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">PositiveSmallIntegerField</span><span class="p">(</span><span class="s2">"Рейтинг"</span><span class="p">,</span> <span class="n">validators</span><span class="o">=</span><span class="n">RATING_VALIDATORS</span><span class="p">)</span>
+</code></pre></div>
+<h2 id="_7">Интерфейсы</h2>
+<table>
+<thead>
+<tr>
+<th>URL</th>
+<th>Что делает</th>
+<th>Кто</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/</code></td>
+<td>список конференций: поиск, фильтры, сортировка, пагинация по 5</td>
+<td>все</td>
+</tr>
+<tr>
+<td><code>/conferences/&lt;id&gt;/</code></td>
+<td>описание, средний рейтинг, отзывы с пагинацией, кнопка регистрации</td>
+<td>все</td>
+</tr>
+<tr>
+<td><code>/conferences/&lt;id&gt;/register/</code></td>
+<td>регистрация автора с докладом</td>
+<td>авторизованный пользователь</td>
+</tr>
+<tr>
+<td><code>/participations/</code></td>
+<td>мои регистрации</td>
+<td>авторизованный пользователь</td>
+</tr>
+<tr>
+<td><code>/participations/&lt;id&gt;/edit/</code>, <code>/participations/&lt;id&gt;/delete/</code></td>
+<td>изменить или удалить свою регистрацию</td>
+<td>её владелец</td>
+</tr>
+<tr>
+<td><code>/conferences/&lt;id&gt;/review/</code></td>
+<td>оставить отзыв</td>
+<td>авторизованный пользователь</td>
+</tr>
+<tr>
+<td><code>/reviews/&lt;id&gt;/delete/</code></td>
+<td>удалить отзыв</td>
+<td>автор отзыва или администратор</td>
+</tr>
+<tr>
+<td><code>/participants/</code></td>
+<td>таблицы участников по конференциям: поиск, фильтры, пагинация по 3 конференции</td>
+<td>все</td>
+</tr>
+<tr>
+<td><code>/participations/&lt;id&gt;/result/</code></td>
+<td>указать результат выступления</td>
+<td>администратор</td>
+</tr>
+<tr>
+<td><code>/conferences/new/</code>, <code>/conferences/&lt;id&gt;/edit/</code>, <code>/conferences/&lt;id&gt;/delete/</code></td>
+<td>создание, правка и удаление конференций</td>
+<td>администратор</td>
+</tr>
+<tr>
+<td><code>/register/</code>, <code>/login/</code></td>
+<td>регистрация, вход</td>
+<td>все</td>
+</tr>
+<tr>
+<td><code>/logout/</code></td>
+<td>выход</td>
+<td>авторизованный пользователь</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_8">Соответствие заданию</h2>
+<table>
+<thead>
+<tr>
+<th>Требование варианта 5</th>
+<th>Где реализовано</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Хранить название, тематики, место, период, описания конференции и места, условия участия</td>
+<td><code>Conference</code>, <code>Topic</code></td>
+</tr>
+<tr>
+<td>Регистрация</td>
+<td><code>RegisterView</code>, <code>User(AbstractUser)</code></td>
+</tr>
+<tr>
+<td>Просмотр конференций</td>
+<td><code>ConferenceListView</code>, <code>ConferenceDetailView</code></td>
+</tr>
+<tr>
+<td>Регистрация авторов, редактирование и удаление регистраций</td>
+<td><code>ParticipationCreateView</code>, <code>ParticipationUpdateView</code>, <code>ParticipationDeleteView</code> без ограничений по статусу</td>
+</tr>
+<tr>
+<td>Отзывы с датами, текстом, рейтингом 1–10 и данными автора</td>
+<td><code>Review</code>; в отзыве показаны ФИО, организация и учёная степень автора</td>
+</tr>
+<tr>
+<td>Результат выступления указывает администратор через Django-admin</td>
+<td><code>ParticipationAdmin</code> (<code>list_editable = ("result",)</code>), а также форма в клиентской части</td>
+</tr>
+<tr>
+<td>Таблица всех участников по конференциям</td>
+<td><code>ParticipantsView</code>: у каждой конференции своя таблица</td>
+</tr>
+<tr>
+<td>Стилизация</td>
+<td>Bootstrap 5</td>
+</tr>
+<tr>
+<td>Права администратора в клиентской части</td>
+<td><code>is_staff</code> в шаблонах и <code>StaffRequiredMixin</code> в представлениях</td>
+</tr>
+<tr>
+<td>Пагинация, фильтрация, поиск</td>
+<td>список конференций и таблицы участников</td>
+</tr>
+</tbody>
+</table>
+<p>Ограничений сверх задания нет: автор может изменять и удалять свою регистрацию в любом статусе, отзывы оставляются без ограничений. Результат при правке автором не меняется: его ставит только администратор.</p>
+<h2 id="_9">Структура кода</h2>
+<p>Код разделён на слои, чтобы логику, защиту и проверки можно было менять и тестировать отдельно.</p>
+<table>
+<thead>
+<tr>
+<th>Модуль</th>
+<th>За что отвечает</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>models.py</code></td>
+<td>поля, связи, ограничения БД</td>
+</tr>
+<tr>
+<td><code>validators.py</code></td>
+<td><strong>защита данных</strong>: порядок дат, рейтинг 1–10</td>
+</tr>
+<tr>
+<td><code>permissions.py</code></td>
+<td><strong>защита доступа</strong>: <code>is_admin</code>, <code>StaffRequiredMixin</code>, <code>OwnerOnlyMixin</code>, <code>reviews_manageable_by</code></td>
+</tr>
+<tr>
+<td><code>services.py</code></td>
+<td><strong>логика</strong>: поиск, сортировка, регистрация автора, группировка участников</td>
+</tr>
+<tr>
+<td><code>forms.py</code></td>
+<td>формы сайта и формы-фильтры, которые проверяют параметры адресной строки</td>
+</tr>
+<tr>
+<td><code>views.py</code></td>
+<td>тонкий слой: параметры запроса, вызов <code>services</code>, проверка прав, ответ шаблона</td>
+</tr>
+<tr>
+<td><code>tests/</code></td>
+<td>тесты по слоям (см. раздел «Тесты»)</td>
+</tr>
+</tbody>
+</table>
+<p>Представление остаётся на несколько строк, логику проверяют без HTTP и шаблонов, а правила доступа лежат в одном месте.</p>
+<h2 id="_10">Поиск, фильтры, сортировка, пагинация</h2>
+<ul>
+<li><strong>Список конференций.</strong> Поиск <code>q</code> по названию, описанию, месту и тематикам; фильтры по тематике, городу и диапазону дат; сортировка по дате (в обе стороны), названию, рейтингу и числу докладов. Конференции без оценок при сортировке по рейтингу идут в конце (<code>NULLS LAST</code>).</li>
+<li><strong>Таблицы участников.</strong> Поиск по ФИО, организации и названию доклада; фильтры по конференции и результату. Пагинация идёт по конференциям, а не по строкам, поэтому таблица одной конференции не делится на две страницы.</li>
+<li><strong>Ссылки пагинации</strong> сохраняют параметры поиска, фильтров и сортировки (<code>querystring_without_page</code>), иначе на следующей странице фильтр пропал бы.</li>
+</ul>
+<p>Параметры адресной строки приходят от пользователя, поэтому их проверяет форма-фильтр. Всё некорректное (<code>?date_from=abc</code>, несуществующая тематика, чужое значение <code>sort</code>) молча выпадает из <code>cleaned_data</code>, и страница открывается без этого фильтра:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># forms.py</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">ConferenceFilter</span><span class="p">(</span><span class="n">forms</span><span class="o">.</span><span class="n">Form</span><span class="p">):</span>
+    <span class="n">q</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">topic</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">ModelChoiceField</span><span class="p">(</span><span class="n">Topic</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">(),</span> <span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">city</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">date_from</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">DateField</span><span class="p">(</span><span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">date_to</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">DateField</span><span class="p">(</span><span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">sort</span> <span class="o">=</span> <span class="n">forms</span><span class="o">.</span><span class="n">ChoiceField</span><span class="p">(</span><span class="n">choices</span><span class="o">=</span><span class="p">[(</span><span class="n">key</span><span class="p">,</span> <span class="n">label</span><span class="p">)</span> <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">_</span><span class="p">)</span> <span class="ow">in</span> <span class="n">SORT_OPTIONS</span><span class="o">.</span><span class="n">items</span><span class="p">()],</span> <span class="n">required</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</code></pre></div>
+<p>Сервис получает уже проверенные значения. Сортировка выбирается по белому списку, а условия фильтров собираются по таблице:</p>
+<div class="highlight"><pre><span></span><code><span class="c1"># services.py</span>
+<span class="n">SORT_OPTIONS</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"date"</span><span class="p">:</span> <span class="p">(</span><span class="s2">"Сначала ближайшие"</span><span class="p">,</span> <span class="p">(</span><span class="s2">"start_date"</span><span class="p">,</span> <span class="s2">"title"</span><span class="p">)),</span>
+    <span class="s2">"-date"</span><span class="p">:</span> <span class="p">(</span><span class="s2">"Сначала поздние"</span><span class="p">,</span> <span class="p">(</span><span class="s2">"-start_date"</span><span class="p">,</span> <span class="s2">"title"</span><span class="p">)),</span>
+    <span class="s2">"title"</span><span class="p">:</span> <span class="p">(</span><span class="s2">"По названию"</span><span class="p">,</span> <span class="p">(</span><span class="s2">"title"</span><span class="p">,)),</span>
+    <span class="s2">"rating"</span><span class="p">:</span> <span class="p">(</span><span class="s2">"По рейтингу"</span><span class="p">,</span> <span class="p">(</span><span class="n">F</span><span class="p">(</span><span class="s2">"avg_rating"</span><span class="p">)</span><span class="o">.</span><span class="n">desc</span><span class="p">(</span><span class="n">nulls_last</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span> <span class="s2">"title"</span><span class="p">)),</span>
+    <span class="s2">"participants"</span><span class="p">:</span> <span class="p">(</span><span class="s2">"По числу докладов"</span><span class="p">,</span> <span class="p">(</span><span class="s2">"-participants_count"</span><span class="p">,</span> <span class="s2">"title"</span><span class="p">)),</span>
+<span class="p">}</span>
+<span class="n">CONFERENCE_LOOKUPS</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"topic"</span><span class="p">:</span> <span class="s2">"topics"</span><span class="p">,</span>
+    <span class="s2">"city"</span><span class="p">:</span> <span class="s2">"city__iexact"</span><span class="p">,</span>
+    <span class="s2">"date_from"</span><span class="p">:</span> <span class="s2">"end_date__gte"</span><span class="p">,</span>
+    <span class="s2">"date_to"</span><span class="p">:</span> <span class="s2">"start_date__lte"</span><span class="p">,</span>
+<span class="p">}</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">search_conferences</span><span class="p">(</span><span class="n">filters</span><span class="p">):</span>
+    <span class="n">qs</span> <span class="o">=</span> <span class="n">Conference</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">prefetch_related</span><span class="p">(</span><span class="s2">"topics"</span><span class="p">)</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span>
+        <span class="n">avg_rating</span><span class="o">=</span><span class="n">Avg</span><span class="p">(</span><span class="s2">"reviews__rating"</span><span class="p">),</span> <span class="n">participants_count</span><span class="o">=</span><span class="n">Count</span><span class="p">(</span><span class="s2">"participations"</span><span class="p">,</span> <span class="n">distinct</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="p">)</span>
+    <span class="n">q</span> <span class="o">=</span> <span class="n">filters</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"q"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">q</span><span class="p">:</span>
+        <span class="n">qs</span> <span class="o">=</span> <span class="n">qs</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span>
+            <span class="n">Q</span><span class="p">(</span><span class="n">title__icontains</span><span class="o">=</span><span class="n">q</span><span class="p">)</span> <span class="o">|</span> <span class="n">Q</span><span class="p">(</span><span class="n">description__icontains</span><span class="o">=</span><span class="n">q</span><span class="p">)</span>
+            <span class="o">|</span> <span class="n">Q</span><span class="p">(</span><span class="n">venue_name__icontains</span><span class="o">=</span><span class="n">q</span><span class="p">)</span> <span class="o">|</span> <span class="n">Q</span><span class="p">(</span><span class="n">topics__name__icontains</span><span class="o">=</span><span class="n">q</span><span class="p">)</span>
+        <span class="p">)</span><span class="o">.</span><span class="n">distinct</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">lookup</span> <span class="ow">in</span> <span class="n">CONFERENCE_LOOKUPS</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">filters</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">name</span><span class="p">):</span>
+            <span class="n">qs</span> <span class="o">=</span> <span class="n">qs</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="o">**</span><span class="p">{</span><span class="n">lookup</span><span class="p">:</span> <span class="n">filters</span><span class="p">[</span><span class="n">name</span><span class="p">]})</span>
+    <span class="k">return</span> <span class="n">qs</span><span class="o">.</span><span class="n">order_by</span><span class="p">(</span><span class="o">*</span><span class="n">SORT_OPTIONS</span><span class="p">[</span><span class="n">filters</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"sort"</span><span class="p">)</span> <span class="ow">or</span> <span class="n">DEFAULT_SORT</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span>
+</code></pre></div>
+<p>Таблицы по конференциям: сначала выбираются конференции, у которых есть подходящие участники. Затем список разбивается на страницы, и участников одним запросом подгружают только для конференций текущей страницы:</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">conferences_with_participants</span><span class="p">(</span><span class="n">participations</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">Conference</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">pk__in</span><span class="o">=</span><span class="n">participations</span><span class="o">.</span><span class="n">values</span><span class="p">(</span><span class="s2">"conference_id"</span><span class="p">))</span><span class="o">.</span><span class="n">order_by</span><span class="p">(</span><span class="s2">"start_date"</span><span class="p">,</span> <span class="s2">"title"</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">group_by_conference</span><span class="p">(</span><span class="n">conferences</span><span class="p">,</span> <span class="n">participations</span><span class="p">):</span>
+    <span class="n">rows</span> <span class="o">=</span> <span class="p">{</span><span class="n">conference</span><span class="o">.</span><span class="n">pk</span><span class="p">:</span> <span class="p">[]</span> <span class="k">for</span> <span class="n">conference</span> <span class="ow">in</span> <span class="n">conferences</span><span class="p">}</span>
+    <span class="n">ordered</span> <span class="o">=</span> <span class="n">participations</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">conference__in</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">conferences</span><span class="p">))</span><span class="o">.</span><span class="n">select_related</span><span class="p">(</span><span class="s2">"user"</span><span class="p">)</span><span class="o">.</span><span class="n">order_by</span><span class="p">(</span>
+        <span class="s2">"user__last_name"</span><span class="p">,</span> <span class="s2">"user__username"</span>
+    <span class="p">)</span>
+    <span class="k">for</span> <span class="n">participation</span> <span class="ow">in</span> <span class="n">ordered</span><span class="p">:</span>
+        <span class="n">rows</span><span class="p">[</span><span class="n">participation</span><span class="o">.</span><span class="n">conference_id</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">participation</span><span class="p">)</span>
+    <span class="k">return</span> <span class="p">[(</span><span class="n">conference</span><span class="p">,</span> <span class="n">rows</span><span class="p">[</span><span class="n">conference</span><span class="o">.</span><span class="n">pk</span><span class="p">])</span> <span class="k">for</span> <span class="n">conference</span> <span class="ow">in</span> <span class="n">conferences</span><span class="p">]</span>
+</code></pre></div>
+<h2 id="_11">Защита</h2>
+<p><strong>Данные</strong> (<code>validators.py</code>). Проверки описаны в одном месте и срабатывают как в формах, так и при <code>full_clean()</code> моделей:</p>
+<div class="highlight"><pre><span></span><code><span class="n">RATING_MIN</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">RATING_MAX</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">RATING_VALIDATORS</span> <span class="o">=</span> <span class="p">[</span><span class="n">MinValueValidator</span><span class="p">(</span><span class="n">RATING_MIN</span><span class="p">),</span> <span class="n">MaxValueValidator</span><span class="p">(</span><span class="n">RATING_MAX</span><span class="p">)]</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">validate_date_range</span><span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="n">end</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">start</span> <span class="ow">and</span> <span class="n">end</span> <span class="ow">and</span> <span class="n">end</span> <span class="o">&lt;</span> <span class="n">start</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">ValidationError</span><span class="p">({</span><span class="s2">"end_date"</span><span class="p">:</span> <span class="s2">"Дата окончания не может быть раньше начала."</span><span class="p">})</span>
+</code></pre></div>
+<p>Дубль регистрации не создаётся ни при повторной отправке формы, ни при одновременных запросах: <code>register_author</code> использует <code>get_or_create</code>, а в БД стоит <code>UniqueConstraint(conference, user)</code>.</p>
+<p><strong>Доступ</strong> (<code>permissions.py</code>). Скрыть кнопку в шаблоне недостаточно: адрес можно открыть вручную. Поэтому шаблон лишь убирает лишнее из интерфейса, а доступ закрывает представление:</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">is_admin</span><span class="p">(</span><span class="n">user</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">user</span><span class="o">.</span><span class="n">is_authenticated</span> <span class="ow">and</span> <span class="n">user</span><span class="o">.</span><span class="n">is_staff</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">StaffRequiredMixin</span><span class="p">(</span><span class="n">UserPassesTestMixin</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">test_func</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">is_admin</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="p">)</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">OwnerOnlyMixin</span><span class="p">(</span><span class="n">LoginRequiredMixin</span><span class="p">):</span>
+    <span class="n">owner_field</span> <span class="o">=</span> <span class="s2">"user"</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_queryset</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">get_queryset</span><span class="p">()</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="o">**</span><span class="p">{</span><span class="bp">self</span><span class="o">.</span><span class="n">owner_field</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="p">})</span>
+</code></pre></div>
+<ul>
+<li>Неавторизованного пользователя закрытая страница перенаправляет на вход, обычный пользователь на страницах администратора получает 403.</li>
+<li>Чужие регистрации дают 404, а не 403, чтобы не раскрывать, что такая запись существует.</li>
+<li>Отзыв удаляет его автор или администратор (<code>reviews_manageable_by</code>).</li>
+<li>Результат выступления администратор может поставить и в Django-admin.</li>
+</ul>
+<h2 id="jinja2">Jinja2</h2>
+<p>В <code>TEMPLATES</code> два движка: <code>DjangoTemplates</code> для Django-admin и <code>Jinja2</code> для сайта. Шаблоны лежат в <code>conferences/jinja2/conferences/</code>. <code>csrf_input</code>, <code>request</code>, <code>user</code> и <code>messages</code> подставляют сам бэкенд и контекстные процессоры, а окружение добавляет функцию <code>url</code> и фильтр <code>date</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">environment</span><span class="p">(</span><span class="o">**</span><span class="n">options</span><span class="p">):</span>
+    <span class="n">env</span> <span class="o">=</span> <span class="n">Environment</span><span class="p">(</span><span class="o">**</span><span class="n">options</span><span class="p">)</span>
+    <span class="n">env</span><span class="o">.</span><span class="n">globals</span><span class="p">[</span><span class="s2">"url"</span><span class="p">]</span> <span class="o">=</span> <span class="n">reverse</span>
+    <span class="n">env</span><span class="o">.</span><span class="n">filters</span><span class="p">[</span><span class="s2">"date"</span><span class="p">]</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">value</span><span class="p">:</span> <span class="n">value</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">"</span><span class="si">%d</span><span class="s2">.%m.%Y"</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">env</span>
+</code></pre></div>
+<h2 id="_12">Ключевые представления</h2>
+<p>Представления тонкие: проверяют параметры формой, вызывают <code>services</code> и подключают права из <code>permissions</code>. Фрагменты сокращены.</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">FilteredListView</span><span class="p">(</span><span class="n">ListView</span><span class="p">):</span>
+    <span class="n">filter_form</span> <span class="o">=</span> <span class="kc">None</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_queryset</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">form</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">filter_form</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">GET</span><span class="p">)</span>
+        <span class="n">form</span><span class="o">.</span><span class="n">is_valid</span><span class="p">()</span>  <span class="c1"># ошибочные параметры отбрасываются, остальные остаются в cleaned_data</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">apply_filters</span><span class="p">(</span><span class="n">form</span><span class="o">.</span><span class="n">cleaned_data</span><span class="p">)</span>
+    <span class="o">...</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">ConferenceListView</span><span class="p">(</span><span class="n">FilteredListView</span><span class="p">):</span>
+    <span class="n">paginate_by</span> <span class="o">=</span> <span class="mi">5</span>
+    <span class="n">filter_form</span> <span class="o">=</span> <span class="n">ConferenceFilter</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">apply_filters</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filters</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">services</span><span class="o">.</span><span class="n">search_conferences</span><span class="p">(</span><span class="n">filters</span><span class="p">)</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">ParticipantsView</span><span class="p">(</span><span class="n">FilteredListView</span><span class="p">):</span>
+    <span class="n">paginate_by</span> <span class="o">=</span> <span class="mi">3</span>
+    <span class="n">filter_form</span> <span class="o">=</span> <span class="n">ParticipantFilter</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">apply_filters</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filters</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">participations</span> <span class="o">=</span> <span class="n">services</span><span class="o">.</span><span class="n">filter_participations</span><span class="p">(</span><span class="n">filters</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">services</span><span class="o">.</span><span class="n">conferences_with_participants</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">participations</span><span class="p">)</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_context_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="n">ctx</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">get_context_data</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+        <span class="n">ctx</span><span class="p">[</span><span class="s2">"groups"</span><span class="p">]</span> <span class="o">=</span> <span class="n">services</span><span class="o">.</span><span class="n">group_by_conference</span><span class="p">(</span><span class="n">ctx</span><span class="p">[</span><span class="s2">"page_obj"</span><span class="p">]</span><span class="o">.</span><span class="n">object_list</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">participations</span><span class="p">)</span>
+        <span class="o">...</span>
+</code></pre></div>
+<p>Регистрация автора, правка своей регистрации и результат выступления:</p>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">ParticipationCreateView</span><span class="p">(</span><span class="n">ForConferenceMixin</span><span class="p">,</span> <span class="n">CreateView</span><span class="p">):</span>
+    <span class="o">...</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">form_valid</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">form</span><span class="p">):</span>
+        <span class="n">_</span><span class="p">,</span> <span class="n">created</span> <span class="o">=</span> <span class="n">services</span><span class="o">.</span><span class="n">register_author</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">conference</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">user</span><span class="p">,</span> <span class="o">**</span><span class="n">form</span><span class="o">.</span><span class="n">cleaned_data</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">created</span><span class="p">:</span>
+            <span class="n">messages</span><span class="o">.</span><span class="n">success</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">request</span><span class="p">,</span> <span class="s2">"Вы зарегистрированы как автор доклада."</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">messages</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">request</span><span class="p">,</span> <span class="s2">"Вы уже зарегистрированы на эту конференцию."</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">redirect</span><span class="p">(</span><span class="s2">"my-participations"</span><span class="p">)</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">ParticipationUpdateView</span><span class="p">(</span><span class="n">OwnerOnlyMixin</span><span class="p">,</span> <span class="n">UpdateView</span><span class="p">):</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">Participation</span>
+    <span class="n">form_class</span> <span class="o">=</span> <span class="n">ParticipationForm</span>
+
+
+<span class="k">class</span><span class="w"> </span><span class="nc">ParticipationResultView</span><span class="p">(</span><span class="n">StaffRequiredMixin</span><span class="p">,</span> <span class="n">UpdateView</span><span class="p">):</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">Participation</span>
+    <span class="n">form_class</span> <span class="o">=</span> <span class="n">ResultForm</span>
+</code></pre></div>
+<h2 id="jinja2_1">Ключевые шаблоны (Jinja2)</h2>
+<p>Меню в <code>base.html</code>: пункты администратора показываются по <code>user.is_staff</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="cp">{%</span> <span class="k">if</span> <span class="nv">user.is_authenticated</span> <span class="cp">%}</span>
+<span class="x">&lt;li class="nav-item"&gt;&lt;a class="nav-link text-nowrap" href="</span><span class="cp">{{</span> <span class="nv">url</span><span class="o">(</span><span class="s1">'my-participations'</span><span class="o">)</span> <span class="cp">}}</span><span class="x">"&gt;Мои регистрации&lt;/a&gt;&lt;/li&gt;</span>
+<span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span>
+<span class="cp">{%</span> <span class="k">if</span> <span class="nv">user.is_staff</span> <span class="cp">%}</span>
+<span class="x">&lt;li class="nav-item"&gt;&lt;a class="nav-link text-nowrap" href="</span><span class="cp">{{</span> <span class="nv">url</span><span class="o">(</span><span class="s1">'conference-create'</span><span class="o">)</span> <span class="cp">}}</span><span class="x">"&gt;+ Конференция&lt;/a&gt;&lt;/li&gt;</span>
+<span class="x">&lt;li class="nav-item"&gt;&lt;a class="nav-link text-nowrap" href="</span><span class="cp">{{</span> <span class="nv">url</span><span class="o">(</span><span class="s1">'admin:index'</span><span class="o">)</span> <span class="cp">}}</span><span class="x">"&gt;Админка&lt;/a&gt;&lt;/li&gt;</span>
+<span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span>
+</code></pre></div>
+<p>Макрос пагинации из <code>macros.html</code> (упрощённо). Параметр <code>query</code> переносит фильтры на другие страницы:</p>
+<div class="highlight"><pre><span></span><code><span class="cp">{%</span> <span class="k">macro</span> <span class="nv">pagination</span><span class="o">(</span><span class="nv">page_obj</span><span class="o">,</span> <span class="nv">query</span><span class="o">)</span> <span class="cp">%}</span>
+<span class="x">  </span><span class="cp">{%</span> <span class="k">if</span> <span class="nv">page_obj.paginator.num_pages</span> <span class="o">&gt;</span> <span class="m">1</span> <span class="cp">%}</span>
+<span class="x">  </span><span class="cp">{%</span> <span class="k">set</span> <span class="nv">base</span> <span class="o">=</span> <span class="s1">'?'</span> <span class="o">~</span> <span class="nv">query</span> <span class="o">~</span> <span class="s1">'&amp;'</span> <span class="k">if</span> <span class="nv">query</span> <span class="k">else</span> <span class="s1">'?'</span> <span class="cp">%}</span>
+<span class="x">  &lt;ul class="pagination justify-content-center"&gt;</span>
+<span class="x">    </span><span class="cp">{%</span> <span class="k">for</span> <span class="nv">num</span> <span class="k">in</span> <span class="nv">page_obj.paginator.page_range</span> <span class="cp">%}</span>
+<span class="x">    &lt;li class="page-item </span><span class="cp">{{</span> <span class="s1">'active'</span> <span class="k">if</span> <span class="nv">num</span> <span class="o">==</span> <span class="nv">page_obj.number</span> <span class="cp">}}</span><span class="x">"&gt;</span>
+<span class="x">      &lt;a class="page-link" href="</span><span class="cp">{{</span> <span class="nv">base</span> <span class="cp">}}</span><span class="x">page=</span><span class="cp">{{</span> <span class="nv">num</span> <span class="cp">}}</span><span class="x">"&gt;</span><span class="cp">{{</span> <span class="nv">num</span> <span class="cp">}}</span><span class="x">&lt;/a&gt;</span>
+<span class="x">    &lt;/li&gt;</span>
+<span class="x">    </span><span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span>
+<span class="x">  &lt;/ul&gt;</span>
+<span class="x">  </span><span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span>
+<span class="cp">{%</span> <span class="k">endmacro</span> <span class="cp">%}</span>
+</code></pre></div>
+<p>Таблицы участников (упрощённо): цикл по конференциям, у каждой своя таблица. Столбец с кнопкой «Результат» виден только администратору:</p>
+<div class="highlight"><pre><span></span><code><span class="cp">{%</span> <span class="k">for</span> <span class="nv">conference</span><span class="o">,</span> <span class="nv">rows</span> <span class="k">in</span> <span class="nv">groups</span> <span class="cp">%}</span>
+<span class="x">&lt;div class="card mb-4"&gt;</span>
+<span class="x">  &lt;div class="card-header"&gt;</span>
+<span class="x">    &lt;a href="</span><span class="cp">{{</span> <span class="nv">conference.get_absolute_url</span><span class="o">()</span> <span class="cp">}}</span><span class="x">"&gt;</span><span class="cp">{{</span> <span class="nv">conference.title</span> <span class="cp">}}</span><span class="x">&lt;/a&gt;</span>
+<span class="x">    &lt;span&gt;участников: </span><span class="cp">{{</span> <span class="nv">rows</span><span class="o">|</span><span class="nf">length</span> <span class="cp">}}</span><span class="x">&lt;/span&gt;</span>
+<span class="x">  &lt;/div&gt;</span>
+<span class="x">  &lt;table class="table"&gt;</span>
+<span class="x">    &lt;tr&gt;&lt;th&gt;Участник&lt;/th&gt;&lt;th&gt;Организация&lt;/th&gt;&lt;th&gt;Доклад&lt;/th&gt;&lt;th&gt;Результат&lt;/th&gt;</span><span class="cp">{%</span> <span class="k">if</span> <span class="nv">user.is_staff</span> <span class="cp">%}</span><span class="x">&lt;th&gt;&lt;/th&gt;</span><span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span><span class="x">&lt;/tr&gt;</span>
+<span class="x">    </span><span class="cp">{%</span> <span class="k">for</span> <span class="nv">p</span> <span class="k">in</span> <span class="nv">rows</span> <span class="cp">%}</span>
+<span class="x">    &lt;tr&gt;</span>
+<span class="x">      &lt;td&gt;</span><span class="cp">{{</span> <span class="nv">p.user</span> <span class="cp">}}</span><span class="x">&lt;/td&gt;</span>
+<span class="x">      &lt;td&gt;</span><span class="cp">{{</span> <span class="nv">p.user.organization</span> <span class="cp">}}</span><span class="x">&lt;/td&gt;</span>
+<span class="x">      &lt;td&gt;</span><span class="cp">{{</span> <span class="nv">p.talk_title</span> <span class="cp">}}</span><span class="x">&lt;/td&gt;</span>
+<span class="x">      &lt;td&gt;</span><span class="cp">{{</span> <span class="nv">result_badge</span><span class="o">(</span><span class="nv">p</span><span class="o">)</span> <span class="cp">}}</span><span class="x">&lt;/td&gt;</span>
+<span class="x">      </span><span class="cp">{%</span> <span class="k">if</span> <span class="nv">user.is_staff</span> <span class="cp">%}</span>
+<span class="x">      &lt;td&gt;&lt;a href="</span><span class="cp">{{</span> <span class="nv">url</span><span class="o">(</span><span class="s1">'participation-result'</span><span class="o">,</span> <span class="nv">args</span><span class="o">=[</span><span class="nv">p.pk</span><span class="o">])</span> <span class="cp">}}</span><span class="x">"&gt;Результат&lt;/a&gt;&lt;/td&gt;</span>
+<span class="x">      </span><span class="cp">{%</span> <span class="k">endif</span> <span class="cp">%}</span>
+<span class="x">    &lt;/tr&gt;</span>
+<span class="x">    </span><span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span>
+<span class="x">  &lt;/table&gt;</span>
+<span class="x">&lt;/div&gt;</span>
+<span class="cp">{%</span> <span class="k">else</span> <span class="cp">%}</span>
+<span class="x">&lt;div class="alert alert-info"&gt;Участников не найдено.&lt;/div&gt;</span>
+<span class="cp">{%</span> <span class="k">endfor</span> <span class="cp">%}</span>
+</code></pre></div>
+<h2 id="_13">Скриншоты</h2>
+<p>Список конференций: поиск «конференция» и фильтр по городу «Санкт-Петербург»:</p>
+<p><img alt="Список с фильтрами" src="../img/lr2/02_list_filtered.png" /></p>
+<p>Сортировка по рейтингу (конференции без оценок в конце):</p>
+<p><img alt="Сортировка по рейтингу" src="../img/lr2/15_list_sorted_rating.png" /></p>
+<p>Вторая страница пагинации:</p>
+<p><img alt="Пагинация" src="../img/lr2/03_list_page2.png" /></p>
+<p>Страница конференции у обычного пользователя (кнопок администратора нет):</p>
+<p><img alt="Конференция, пользователь" src="../img/lr2/07_detail_user.png" /></p>
+<p>Страница той же конференции у администратора (есть «Изменить» и «Удалить»):</p>
+<p><img alt="Конференция, администратор" src="../img/lr2/11_detail_admin.png" /></p>
+<p>Регистрация автора на конференцию и результат в списке «Мои регистрации»:</p>
+<p><img alt="Форма регистрации автора" src="../img/lr2/08_participation_form.png" /></p>
+<p><img alt="Мои регистрации" src="../img/lr2/09_my_participations.png" /></p>
+<p>Таблицы участников: у каждой конференции своя таблица, пагинация идёт по конференциям:</p>
+<p><img alt="Таблицы участников" src="../img/lr2/04_participants.png" /></p>
+<p><img alt="Вторая страница таблиц" src="../img/lr2/16_participants_page2.png" /></p>
+<p>Те же таблицы у администратора: появляется столбец с кнопкой «Результат»:</p>
+<p><img alt="Таблицы участников, администратор" src="../img/lr2/12_participants_admin.png" /></p>
+<p>Форма отзыва с рейтингом 1–10 и форма регистрации пользователя:</p>
+<p><img alt="Форма отзыва" src="../img/lr2/10_review_form.png" /></p>
+<p><img alt="Регистрация" src="../img/lr2/05_register.png" /></p>
+<p>Создание конференции администратором и Django-admin (результат выступления редактируется прямо в списке):</p>
+<p><img alt="Форма конференции" src="../img/lr2/13_conference_form.png" /></p>
+<p><img alt="Django-admin" src="../img/lr2/14_django_admin.png" /></p>
+<h2 id="_14">Тесты</h2>
+<p>64 теста в пакете <code>conferences/tests/</code>, разложенные по слоям:</p>
+<table>
+<thead>
+<tr>
+<th>Файл</th>
+<th>Что проверяет</th>
+<th>Тестов</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>test_validators.py</code></td>
+<td>защита данных: порядок дат, рейтинг 1–10 (границы включены), проверки в моделях</td>
+<td>8</td>
+</tr>
+<tr>
+<td><code>test_services.py</code></td>
+<td>логика: поиск, фильтры, сортировка, мусорные параметры, регистрация без дубля, группировка участников</td>
+<td>17</td>
+</tr>
+<tr>
+<td><code>test_permissions.py</code></td>
+<td>защита доступа: неавторизованный, обычный пользователь и администратор на закрытых страницах; чужие регистрации и отзывы</td>
+<td>12</td>
+</tr>
+<tr>
+<td><code>test_views.py</code></td>
+<td>страницы целиком: отрисовка, пагинация, регистрация, сценарии автора и администратора, таблицы по конференциям, отзывы, мусорные параметры</td>
+<td>25</td>
+</tr>
+<tr>
+<td><code>test_seed.py</code></td>
+<td>демо-данные: повторный запуск ничего не дублирует, отзывы только у прошедших конференций</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p>Общие фабрики (<code>make_conference</code>, <code>make_participation</code>, <code>make_review</code>) и базовый класс лежат в <code>tests/base.py</code>. Запуск: <code>python manage.py test</code> (весь набор) или, например, <code>python manage.py test conferences.tests.test_services</code> (один слой). Тесты работают на PostgreSQL; тот же набор проходит и на Django 3.2.</p>
+<h2 id="_15">Вывод</h2>
+<p>Реализован сайт научных конференций на Django с Jinja2 и PostgreSQL. Есть регистрация и вход, просмотр конференций с поиском, фильтрами, сортировкой и пагинацией, регистрация авторов с правкой и удалением своих заявок, отзывы с рейтингом 1–10 и таблицы участников по конференциям. Администратор в клиентской части создаёт и правит конференции и указывает результат выступления. Кнопки администратора показываются по <code>is_staff</code> в шаблонах, а доступ проверяется в представлениях. Код разделён на слои (модели, проверки, права, логика, представления), секреты вынесены в <code>.env</code>, поведение подтверждено 64 тестами по слоям.</p>
+<h2 id="_16">Источники</h2>
+<ul>
+<li><a href="https://rendex85.github.io/ITMO_ICT_WebDevelopment_Docs/lab2/assignment/">Задание ЛР2</a></li>
+<li><a href="https://rendex85.github.io/ITMO_ICT_WebDevelopment_Docs/lab2/practice1/">Практика 2.1</a>, <a href="https://rendex85.github.io/ITMO_ICT_WebDevelopment_Docs/lab2/practice2/">2.2</a>, <a href="https://rendex85.github.io/ITMO_ICT_WebDevelopment_Docs/lab2/practice3/">2.3</a></li>
+<li><a href="https://docs.djangoproject.com/en/5.2/topics/templates/">Django: шаблонизаторы, в том числе Jinja2</a></li>
+<li><a href="https://docs.djangoproject.com/en/5.2/topics/class-based-views/">Django: class-based views</a></li>
+<li><a href="https://docs.djangoproject.com/en/5.2/topics/auth/default/#the-loginrequired-mixin">Django: миксины доступа</a></li>
+<li><a href="https://docs.djangoproject.com/en/5.2/topics/pagination/">Django: пагинация</a></li>
+<li><a href="https://docs.djangoproject.com/en/5.2/topics/auth/customizing/">Django: расширение модели пользователя</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+    
+  </body>
+</html>
